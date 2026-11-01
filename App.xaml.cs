@@ -1,6 +1,4 @@
-﻿
-
-namespace Agenda13
+﻿namespace Agenda13
 {
     public partial class App : Application
     {
@@ -9,6 +7,7 @@ namespace Agenda13
             InitializeComponent();
 
             MainPage = new NavigationPage(new Views.PaginaContratacao());
+            Routing.RegisterRoute("Sobre", typeof(Views.Sobre));
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
@@ -16,7 +15,7 @@ namespace Agenda13
             var window = base.CreateWindow(activationState);
 
             window.Width = 400;
-            window.Height = 740;
+            window.Height = 780;
 
             return window;
         }
